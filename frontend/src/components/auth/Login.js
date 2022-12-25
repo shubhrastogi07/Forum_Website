@@ -17,7 +17,7 @@ function Login() {
     <div className="login-container">
       <div className="login-content">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlsYUIlBsvY58ONNKDoewyme3m57f2_83Ndd40vRX99u1GIPCa2ZB6FYKVc1B-PKeDZQ&usqp=CAU"
+          src="https://www.nicepng.com/png/full/267-2679984_forum-logo-forum-logo-png.png"
           alt="logo"
         />
         <button onClick={handleSubmit} className="btn-login">

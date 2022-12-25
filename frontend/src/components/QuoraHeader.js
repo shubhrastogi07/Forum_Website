@@ -1,14 +1,4 @@
 import React, { useState } from "react";
-import HomeIcon from "@material-ui/icons/Home";
-import FeaturedPlayListOutlinedIcon from "@material-ui/icons/FeaturedPlayListOutlined";
-import {
-  AssignmentTurnedInOutlined,
-  // Close,
-  NotificationsOutlined,
-  PeopleAltOutlined,
-  Search,
-  ExpandMore,
-} from "@material-ui/icons";
 import CloseIcon from "@material-ui/icons/Close";
 import { Avatar, Button, Input } from "@material-ui/core";
 import "./css/QuoraHeader.css";
@@ -71,30 +61,9 @@ function QuoraHeader() {
       <div className="qHeader-content">
         <div className="qHeader__logo">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlsYUIlBsvY58ONNKDoewyme3m57f2_83Ndd40vRX99u1GIPCa2ZB6FYKVc1B-PKeDZQ&usqp=CAU"
+            src="https://www.nicepng.com/png/full/267-2679984_forum-logo-forum-logo-png.png"
             alt="logo"
           />
-        </div>
-        <div className="qHeader__icons">
-          <div className="qHeader__icon">
-            <HomeIcon />
-          </div>
-          <div className="qHeader__icon">
-            <FeaturedPlayListOutlinedIcon />
-          </div>
-          <div className="qHeader__icon">
-            <AssignmentTurnedInOutlined />
-          </div>
-          <div className="qHeader__icon">
-            <PeopleAltOutlined />
-          </div>
-          <div className="qHeader__icon">
-            <NotificationsOutlined />
-          </div>
-        </div>
-        <div className="qHeader__input">
-          <Search />
-          <input type="text" placeholder="Search questions" />
         </div>
         <div className="qHeader__Rem">
           <span onClick={handleLogout}>
@@ -121,11 +90,7 @@ function QuoraHeader() {
             </div>
             <div className="modal__info">
               <Avatar src={user?.photo} className="avatar" />
-              <div className="modal__scope">
-                <PeopleAltOutlined />
-                <p>Public</p>
-                <ExpandMore />
-              </div>
+              <div className="modal__scope"></div>
             </div>
             <div className="modal__Field">
               <Input

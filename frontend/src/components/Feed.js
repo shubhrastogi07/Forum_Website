@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import QuoraBox from './QuoraBox';
-import './css/feed.css'
-import Post from './Post';
-import axios from 'axios';
-
+import React, { useEffect, useState } from "react";
+import QuoraBox from "./QuoraBox";
+import "./css/feed.css";
+import Post from "./Post";
+import axios from "axios";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -18,14 +17,14 @@ function Feed() {
         console.log(e);
       });
   }, []);
-  return <div className='feed'>
-    <QuoraBox/>
-    {posts.map((post, index) => (
+  return (
+    <div className="feed">
+      <QuoraBox />
+      {posts.map((post, index) => (
         <Post key={index} post={post} />
       ))}
-    {/* <Post/> */}
-
-  </div>;
+    </div>
+  );
 }
 
 export default Feed;
